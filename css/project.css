@@ -1,0 +1,579 @@
+body {
+    background-image: url('../assets/images/welcomebg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000000; /* Fallback for if the image doesn't load */
+    margin: 0;
+    padding: 0;
+    font-family: 'Radio Canada', sans-serif;
+    color: white;
+    height: 100vh;
+    color: white;
+    min-height: 200vh; /* This ensures the page is tall enough to scroll */
+    background-attachment: fixed; /* This is the key property */
+    background-position: center; /* Ensures the background image is centered */
+}
+
+/* Base container to enforce the 72px left margin */
+.main-container {
+    padding-left: 72px;
+    padding-top: -21px;
+    margin-top: -14px;
+}
+
+/* Top Navigation Bar */
+.top-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px; /* Adjust as needed */
+    gap: 20px;
+}
+
+/* Back Button */
+.back-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 130px;
+    height: 50px;
+    border-radius: 11px;
+    background: linear-gradient(90deg, #3ebde44e 17%, rgba(97, 217, 255, 0.00) 100%);
+    color: #72D7FF;
+    font-size: 20px;
+    font-weight: 600; /* Semibold */
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.back-button:hover {
+    transform: scale(1.05); /* Cool hover effect */
+    font-weight: 600;
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Project Path Text */
+.project-path {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.path-project, .path-lunarai {
+    font-size: 18px;
+    font-weight: 600; /* Semibold */
+}
+
+.path-project {
+    color: #86DDFF;
+}
+
+.path-lunarai {
+    color: white;
+}
+
+.path-divider {
+    width: 18px;
+    height: 18px;
+}
+
+/* Existing styles are here */
+
+body {
+    background-image: url('../assets/images/welcomebg.png');
+    background-size: cover; /* Changed to cover for better responsiveness */
+    background-repeat: no-repeat;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Radio Canada', sans-serif;
+    color: white;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+.main-container {
+    padding-left: 72px;
+    padding-right: 72px; /* Add padding to the right for balance */
+}
+
+/* ... existing top-nav-bar styles ... */
+
+/* New main content grid */
+.main-content {
+    display: grid;
+    grid-template-columns: 570px 91px 666px; /* Left grid, gap, and right grid */
+    align-items: start;
+    margin-top: 0px; /* Space below the top nav bar */
+}
+
+.left-grid {
+    grid-column: 1 / 2;
+}
+
+.right-grid {
+    grid-column: 3 / 4;
+}
+
+/* Project Title */
+.project-title {
+    color: #6BC7EB;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 64px;
+    font-weight: 700; /* Bold */
+    margin: 0;
+    padding: 0;
+}
+
+/* Blinking Neon Blue Line */
+.blinking-line {
+    width: 255px; /* <--- Adjust the length of the line here */
+    height: 4px;
+    background-color: #6BC7EB;
+    box-shadow: 0 0 5px #6BC7EB, 0 0 10px #6BC7EB, 0 0 15px #6BC7EB;
+    margin-top: 0px;
+    animation: blink-animation 2s infinite alternate;
+    border-radius: 5px;
+}
+
+/* Blinking animation keyframes */
+@keyframes blink-animation {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+/* Project Description Text */
+.project-description {
+    color: white;
+    font-family: 'Noto Sans Tamil UI', sans-serif;
+    font-size: 16px;
+    font-weight: 500; /* Medium */
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/* Existing styles */
+
+/* ... all previous CSS code ... */
+
+/* Hackathon & Finalist Tags Container */
+.tag-container {
+    display: flex;
+    align-items: left;
+    gap: 15px;
+    width: 550px;
+    height: 75px;
+    border-radius: 12px;
+    padding: 5px;
+    background: #61daff3a 27%, rgba(97, 218, 255, 0.122) 100%;
+    border: 1px solid #86DDFF;
+    margin-top: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.tag-container:hover {
+    box-shadow: 0 0 10px #86DDFF, inset 0 0 10px #86DDFF;
+}
+
+/* Individual Tag Styles */
+.tag-style {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 261px;
+    height: 64px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #86ddff48 29%, rgba(134, 221, 255, 0.00) 100%);
+    box-sizing: border-box;
+}
+
+.tag-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.tag-logo {
+    height: 40px; /* Adjust size of logo as needed */
+}
+
+.tag-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tag-main-text {
+    color: white;
+    font-family: 'Noto Sans Tai Tham', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.tag-sub-text {
+    color: white;
+    font-family: 'Noto Sans Tamil UI', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+/* Specific Tag Adjustments */
+.finalist-tag .tag-text {
+    /* To ensure "As" and "Finalist" are stacked as per the image */
+    flex-direction: column;
+}
+
+/* ... existing styles for body, .main-container, etc. ... */
+
+/* Buttons Container */
+.button-container {
+    display: flex;
+    gap: 13px;
+    margin-top: 10px;
+}
+
+/* Base button styles */
+.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-style:hover {
+    transform: scale(1.05); /* Cool hover effect */
+}
+
+.button-icon {
+
+    margin-right: 10px;
+}
+
+.button-text {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+/* Live Web Button (Left) */
+.live-web-button {
+    width: 171px;
+    height: 51px;
+    background-color: #378DA8;
+    color: white;
+}
+
+/* View GitHub Button (Right) */
+.github-button {
+    width: 209px;
+    height: 50.6px;
+    background-color: transparent;
+    border: 1px solid #86DDFF;
+    color: #86DDFF;
+}
+
+.github-button:hover {
+    box-shadow: 0 0 15px #6BC7EB; /* Cool glowing effect on hover */
+}
+
+/* ... existing styles ... */
+
+/* Tech Used Section */
+.tech-used-section {
+    margin-top: 20px;
+}
+
+.tech-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.tech-title-text {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Tech Bubbles Container */
+.tech-bubbles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Individual Tech Bubble */
+.tech-bubble {
+    display: inline-flex;
+    align-items: center;
+    height: 51px;
+    padding: 0 25px; /* 25px gap on right and left */
+    border-radius: 14px;
+    background-color: rgba(97, 217, 255, 0.18);
+    border: 1px solid #86DDFF;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Animation for Tech Bubbles */
+.tech-bubble:hover {
+    box-shadow: 0 0 10px #31b7ed, inset 0 0 10px #46beee;
+    transform: translateY(-5px); /* Unique lift and glow effect */
+}
+
+.tech-bubble-text {
+    font-family: 'Noto Sans Tai Tham', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+/* ... existing styles ... */
+
+.right-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the two frames */
+    align-items: center;
+    margin-top: -20px;
+}
+
+/* Top Right Frame (Dashboard Placeholder) */
+.top-right-frame {
+    width: 666px;
+    height: 310px;
+    border-radius: 13px;
+    border: 1px solid #86DDFF;
+    
+}
+
+/* Thumbnail button */
+    .image-btn {
+      width: 666px;
+      height: 400px;
+      border: 1px solid #86DDFF;
+      border-radius: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+      box-shadow: 0 8px 20px rgba(97, 217, 255, 0.4);
+      animation: floating 3s ease-in-out infinite alternate; /* Floating animation */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .image-btn:hover {
+      transform: scale(1.03);
+    }
+
+    .image-btn img {
+      max-width: 666;
+      border-radius: 17px;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none; 
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+
+    .image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 394px);
+  gap: 20px;
+}
+
+.image-btn {
+  width: 666px;
+  height: 360px;
+  border: 2px solid #86DDFF;
+  border-radius: 17px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-btn img {
+
+  object-fit: cover;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 150%;
+  height: 150%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 150%;
+  max-height: 150%;
+  border-radius: 10px;
+}
+/* Dark background overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Image inside modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 150%;
+  max-height: 150%;
+  border-radius: 17px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+/* Fade-in background */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Zoom-in image */
+@keyframes zoomIn {
+  from {transform: scale(0.7); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+/* Optional: zoom-out when closing */
+.modal-content.hide {
+  animation: zoomOut 0.3s ease forwards;
+}
+
+@keyframes zoomOut {
+  from {transform: scale(1); opacity: 1;}
+  to {transform: scale(0.7); opacity: 0;}
+}
+
+/* Keyframe for floating animation */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-5px); }
+}
+
+/* Key Feature Frame */
+.key-feature-frame {
+    width: 666px;
+    height: 250px;
+    border-radius: 13px;
+    border: 1px solid #86DDFF;
+    background-color: rgba(97, 217, 255, 0.17);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.key-feature-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.key-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.key-title-text {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 20px;
+    font-weight: 600; /* Semibold */
+}
+
+/* Key Feature Points List */
+.key-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.key-feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.pip-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.feature-text {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    font-weight: 500; /* Medium */
+    color: white;
+}
+
+/* ===== WHOLE PAGE FADE & SLIDE-IN ===== */
+body {
+  opacity: 0;
+  transform: translateY(30px);  /* page starts slightly lower */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+body.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}

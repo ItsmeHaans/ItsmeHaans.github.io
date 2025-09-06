@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Under Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  background: url(assets/images/welcomebg.png) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Suez One', serif;
+  color: #86DDFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+    .container {
+      margin-top: -60px;
+      text-align: center;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    /* Title */
+    .title {
+  font-size: 64px;
+  margin-bottom: -10px;
+  text-shadow: 0 0 5px #09202a;
+  /* ❌ remove floatTitle */
+}
+
+.subtitle {
+  font-size: 24px;
+  font-family: 'Suez One', serif;
+  text-shadow: 0 0 5px #0f2c38;
+  margin-bottom: -40px;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+
+    /* 404 image */
+    .error-img {
+
+      margin-bottom: 30px;
+      animation: bounceIn 1.4s ease forwards, idleFloat 4s ease-in-out infinite;
+    }
+
+    /* Button */
+    .go-back {
+      display: inline-block;
+      width: 250px;
+      height: 56px;
+      line-height: 56px;
+      border-radius: 14px;
+      background: #86DDFF;
+      color: #002243;
+      font-family: 'Baloo Thambi 2', cursive;
+      font-size: 32px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 12px rgba(134,221,255,0.6);
+      animation: fadeInUp 1.6s ease forwards;
+    }
+
+    .go-back:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #86DDFF;
+}
+
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { opacity: 0; transform: scale(0.3); }
+      50% { opacity: 1; transform: scale(1.05); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes floatTitle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes idleFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Under construction!</div>
+    <div class="subtitle">(I forgot to make this page)</div>
+    <img src="assets/images/404.png" alt="404 Whale" class="error-img">
+    <br>
+    <a href="main.html" class="go-back">GO BACK</a>
+  </div>
+</body>
+</html>
