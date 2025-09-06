@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!funFactElement) return;
 
   const facts = [
-    'Music makes you calm? You’re clearly curious about me, so relax, and think it through.',
+    'Music makes you calm? You’re clearly curious about me, so relax, breathe, and think it through.',
     
   ];
 
@@ -233,3 +233,4 @@ if (lofiBtn && lofiAudio) {
     }
   });
 }
+
