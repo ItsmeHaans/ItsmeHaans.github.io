@@ -577,3 +577,12 @@ body.loaded {
   opacity: 1;
   transform: translateY(0);
 }
+
+.image-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* makes it fully fill and crop if needed */
+  object-position: center;
+  border-radius: 17px;
+  display: block;
+}
