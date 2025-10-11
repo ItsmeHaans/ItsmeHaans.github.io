@@ -133,7 +133,7 @@ body {
 
 /* Blinking Neon Blue Line */
 .blinking-line {
-    width: 255px; /* <--- Adjust the length of the line here */
+    width: 700px; /* <--- Adjust the length of the line here */
     height: 4px;
     background-color: #6BC7EB;
     box-shadow: 0 0 5px #6BC7EB, 0 0 10px #6BC7EB, 0 0 15px #6BC7EB;
@@ -605,5 +605,6 @@ body.loaded {
   object-position: center;
   display: block;
 }
+
 
 
