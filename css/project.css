@@ -603,3 +603,30 @@ html, body {
   align-self: start;
 }
 
+
+/* ======= SCROLL + LAYOUT FIX ======= */
+html, body {
+  height: auto;
+  min-height: 100vh;
+  overflow-y: auto !important;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 2rem 72px;
+}
+
+.left-grid {
+  flex: 0 0 570px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.right-grid {
+  flex: 0 0 666px;
+  height: auto;
+  align-self: flex-start;
+}
