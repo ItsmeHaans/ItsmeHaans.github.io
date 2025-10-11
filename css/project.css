@@ -587,4 +587,23 @@ body.loaded {
   display: block;
 }
 
+.image-btn {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* or whatever ratio your image uses */
+  overflow: hidden;
+  border-radius: 17px; /* match your image’s corner style */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* fallback background */
+}
+
+.image-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills container fully */
+  object-position: center;
+  display: block;
+}
+
 
