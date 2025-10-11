@@ -579,10 +579,11 @@ body.loaded {
 }
 
 .image-btn img {
-  width: 100%;
-  height: 100%;
+  width: 105%;
+  height: 105%;
   object-fit: cover;   /* makes it fully fill and crop if needed */
   object-position: center;
   border-radius: 17px;
   display: block;
 }
+
