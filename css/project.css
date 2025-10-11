@@ -577,3 +577,29 @@ body.loaded {
   opacity: 1;
   transform: translateY(0);
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.left-grid, .right-grid {
+  flex: 1;
+  height: auto;
+  align-self: start;
+}
+
