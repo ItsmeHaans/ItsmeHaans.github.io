@@ -1,9 +1,40 @@
-// Wait 2s, then fade out over 1.5s, then redirect
-setTimeout(() => {
-  document.body.classList.add("fade-out");
+document.addEventListener("DOMContentLoaded", () => {
+  /* ===============================
+     MOBILE DETECTION
+  =============================== */
+  const isMobile =
+    /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+    window.innerWidth <= 768;
 
-  // Wait for the CSS transition to finish, then redirect
-  setTimeout(() => {
-    window.location.href = "main.html";
-  }, 1500); // match transition duration
-}, 3000); // initial wait
+  /* ===============================
+     PHONE UI
+  =============================== */
+  const phoneGate = document.getElementById("phone-gate");
+  const hintBtn = document.getElementById("howDesktopBtn");
+  const hintBox = document.getElementById("desktopHint");
+
+  if (isMobile && phoneGate) {
+    phoneGate.style.display = "flex";
+  }
+
+  if (hintBtn) {
+    hintBtn.addEventListener("click", () => {
+      hintBox.style.display =
+        hintBox.style.display === "block" ? "none" : "block";
+    });
+  }
+
+  /* ===============================
+     AUTO REDIRECT (DESKTOP ONLY)
+  =============================== */
+  if (!isMobile) {
+    // Wait 3s, fade out, then redirect
+    setTimeout(() => {
+      document.body.classList.add("fade-out");
+
+      setTimeout(() => {
+        window.location.href = "main.html";
+      }, 1500); // match transition duration
+    }, 3000);
+  }
+});
