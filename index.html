@@ -7,9 +7,37 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/images/welcomebg.png">
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+
 
 </head>
 <body style="background:#001f3f;">
+  <!-- PHONE ONLY OVERLAY -->
+<div id="phone-gate">
+  <div class="phone-content">
+    <img src="assets/images/whale.png" alt="Whale" class="phone-whale">
+
+    <h1>You’re opening from a Phone</h1>
+    <p>
+      For a smoother and more immersive experience,<br>
+      please open this website in <strong>Desktop View</strong>.
+    </p>
+
+    <button id="howDesktopBtn">How to enable Desktop View</button>
+
+    <div id="desktopHint">
+      <p>
+        <strong>Chrome (Android):</strong><br>
+        Tap <strong>⋮</strong> → Enable <strong>Desktop site</strong>
+      </p>
+      <p>
+        <strong>Safari (iOS):</strong><br>
+        Tap <strong>aA</strong> → <strong>Request Desktop Website</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
   <div class="welcome-container">
     <!-- Top image -->
     <img src="./assets/images/welcomeup.png" alt="Welcome Top" class="welcome-top">
@@ -34,3 +62,4 @@
   <script src="js/welcome.js" defer></script>
 </body>
 </html>
+
