@@ -97,3 +97,93 @@ body.fade-out {
 }
 
 
+/* ===============================
+   PHONE GATE (MOBILE ONLY)
+================================ */
+
+#phone-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background: url("../assets/images/phone.png") center/cover no-repeat;
+  font-family: 'Suez One', serif;
+  color: #86DDFF;
+}
+
+.phone-content {
+  text-align: center;
+  padding: 24px;
+  max-width: 420px;
+}
+
+.phone-whale {
+  width: 180px;
+  margin-bottom: 24px;
+  image-rendering: pixelated;
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.phone-content h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.phone-content p {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+#howDesktopBtn {
+  margin-top: 20px;
+  padding: 12px 20px;
+
+  background: transparent;
+  border: 2px solid #86DDFF;
+  color: #86DDFF;
+
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: 'Noto Sans TC', sans-serif;
+  transition: all 0.25s ease;
+}
+
+#howDesktopBtn:hover {
+  background: #86DDFF;
+  color: #001f3f;
+}
+
+#desktopHint {
+  margin-top: 16px;
+  font-size: 13px;
+  display: none;
+  opacity: 0.85;
+}
+
+/* Floating whale animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===============================
+   MOBILE DETECTION
+================================ */
+@media (max-width: 768px) {
+  #phone-gate {
+    display: flex;
+  }
+
+  /* Hide your desktop welcome */
+  .welcome-container {
+    display: none;
+  }
+}
+
